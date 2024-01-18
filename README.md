@@ -24,22 +24,19 @@ incorporates both programming and UI design fundamentals.
 
 -   Each habit should have a name, description, and optional category.
 
--   Users can set a frequency for each habit (e.g., daily,
-    > weekly, monthly).
+-   Users can set a frequency for each habit (e.g., daily, weekly, monthly).
 
 **2.2 Progress Tracking**
 
 -   Users can mark habits as completed for each day.
 
--   The application should keep track of cumulative progress for
-    > each habit.
+-   The application should keep track of cumulative progress for each habit.
 
 -   Users can view their progress history and analyze trends.
 
 **2.3 Data Visualization**
 
--   The application should provide visual representations of user
-    > progress, such as bar charts or calendars.
+-   The application should provide visual representations of user progress, such as bar charts or calendars.
 
 -   Users can customize the type of visualization and data range.
 
@@ -47,16 +44,13 @@ incorporates both programming and UI design fundamentals.
 
 -   Users can set reminders for upcoming habit tasks.
 
--   Reminders can be configured with different notification options
-    > (e.g., sound, pop-up message).
+-   Reminders can be configured with different notification options (e.g., sound, pop-up message).
 
 **2.5 Data Persistence**
 
--   The application should store user habits and progress
-    > data persistently.
+-   The application should store user habits and progress data persistently.
 
--   Users should be able to export their data to a file for backup
-    > or analysis.
+-   Users should be able to export their data to a file for backup or analysis.
 
 **3. Non-Functional Requirements**
 
@@ -64,19 +58,15 @@ incorporates both programming and UI design fundamentals.
 
 -   The UI should be intuitive and easy to navigate for beginners.
 
--   The application should be visually appealing and adopt a modern
-    > design style.
+-   The application should be visually appealing and adopt a modern design style.
 
--   The UI should be responsive and adapt to different screen sizes
-    > and resolutions.
+-   The UI should be responsive and adapt to different screen sizes and resolutions.
 
 **3.2 Performance**
 
--   The application should be responsive and performant even with large
-    > amounts of data.
+-   The application should be responsive and performant even with large amounts of data.
 
--   Loading times should be minimized to ensure a smooth
-    > user experience.
+-   Loading times should be minimized to ensure a smooth user experience.
 
 **3.3 Reliability**
 
@@ -113,8 +103,7 @@ components:
 
 -   The application should be stable and free from critical errors.
 
--   The application should be documented with user manuals and
-    > technical specifications.
+-   The application should be documented with user manuals and technical specifications.
 
 **7. Future Enhancements**
 
