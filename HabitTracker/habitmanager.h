@@ -3,6 +3,8 @@
 
 #include <QObject>
 #include <QVector>
+#include <QDebug>
+#include <QVariant>
 #include "habit.h"
 
 class HabitManager : public QObject
@@ -11,14 +13,16 @@ class HabitManager : public QObject
 public:
     explicit HabitManager(QObject *parent = nullptr);
     int checkHabit(QString);
-    void addNewHabit(QString, QString, QString, QString);
-    void removeHabit(QString);
-    void loadHabits();
 private:
     QVector<Habit*> habitManager;
 public slots:
+    bool addNewHabit(QString, QString, QString, QString);
+    void removeHabit(QString);
+    // QString getHabits();
+    void loadHabits();
 
 signals:
+    void habitString(QString);
 };
 
 #endif // HABITMANAGER_H

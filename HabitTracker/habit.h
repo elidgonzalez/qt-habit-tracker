@@ -2,6 +2,7 @@
 #define HABIT_H
 
 #include <QObject>
+#include <QMap>
 
 class Habit : public QObject
 {
@@ -17,11 +18,14 @@ public:
     QString getDescription() {return description;}
     QString getCategory() {return category;}
     QString getfrequency() {return frequency;}
+    QString getAll();
 private:
+    int id;
     QString name;
     QString description;
     QString category;
     QString frequency;
+    int count;
 signals:
 };
 

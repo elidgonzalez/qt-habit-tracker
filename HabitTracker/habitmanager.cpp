@@ -14,13 +14,15 @@ int HabitManager::checkHabit(QString name)
     return -1;
 }
 
-void HabitManager::addNewHabit(QString name, QString description, QString category, QString frequency)
+bool HabitManager::addNewHabit(QString name, QString description, QString category, QString frequency)
 {
-    if (checkHabit(name) != -1) {
+    if (checkHabit(name) == -1) {
         Habit* newHabit = new Habit();
         newHabit->setAll(name, description, category, frequency);
         habitManager.push_back(newHabit);
+        return true;
     }
+    return false;
 }
 
 void HabitManager::removeHabit(QString name)
@@ -31,7 +33,20 @@ void HabitManager::removeHabit(QString name)
     }
 }
 
+// QString HabitManager::getHabits()
+// {
+//     QString allHabits = "";
+//     for (int i = 0; i < habitManager.size(); i++) {
+//         allHabits += habitManager[i]->getAll();
+//     }
+//     return allHabits;
+// }
+
 void HabitManager::loadHabits()
 {
-
+    for (int i = 0; i < habitManager.size(); i++) {
+        qInfo() << "This is a test";
+        qInfo() << habitManager[i]->getAll();
+        emit habitString(habitManager[i]->getAll());
+    }
 }

@@ -16,3 +16,9 @@ void Habit::setAll(QString name, QString description, QString category, QString 
     this->category = category;
     this->frequency = frequency;
 }
+
+QString Habit::getAll()
+{
+    QString habit = getName() + "|" + getDescription() + "|" + getCategory() + "|" + getfrequency();
+    return habit;
+}

@@ -4,16 +4,14 @@
 #include <QQmlContext>
 #include "habitmanager.h"
 
-
-
 int main(int argc, char *argv[])
 {
+    qmlRegisterType<HabitManager>("com.edg.habitmanager", 1, 0, "HabitManager");
+
     QGuiApplication app(argc, argv);
 
 
     QQmlApplicationEngine engine;
-    HabitManager * habits = new HabitManager(&app);
-    engine.rootContext()->setContextProperty("habitManager", habits);
     const QUrl url(u"qrc:/HabitTracker/Main.qml"_qs);
     QObject::connect(
         &engine,
@@ -25,3 +23,4 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+

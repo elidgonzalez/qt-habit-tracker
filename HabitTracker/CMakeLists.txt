@@ -18,6 +18,7 @@ qt_add_qml_module(appHabitTracker
     QML_FILES Main.qml
     SOURCES habit.h habit.cpp
     SOURCES habitmanager.h habitmanager.cpp
+    QML_FILES Habit.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
